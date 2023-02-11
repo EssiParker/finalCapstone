@@ -1,8 +1,10 @@
 # finalCapstone
 **bookstore_clerk**
+
 This is a python based app used that demonstrate a online bookstore database. This program was created to demonstrate my knowledge and understanding of how to manipulate databases in Python.
 
 **How to use:**
+
 username: admin 
 password: adm1n
 
