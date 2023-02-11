@@ -1,49 +1,41 @@
 # finalCapstone
-bookstore_clerk
-A python based app used to perform functions on a sqlite3 Database. Modelled for this purpose on an imaginary Bookstore. Designed to demonstrate my understanding of manipulating databases in python.
+**bookstore_clerk**
+This is a python based app used that demonstrate a online bookstore database. This program was created to demonstrate my knowledge and understanding of how to manipulate databases in Python.
 
-Credentials for demo use:
-username: admin password: adm1n
+**How to use:**
+username: admin 
+password: adm1n
 
-To run this file in Docker play ground open an instance and type: docker run -i admbjmn/bookstore_clerk
+You can run this code in Pycharm. Download/copy the files to your local, make sure all the database file is in the same directory as the python script. This is a simple Task Management system where the user can read, update and remove entires in the database. 
 
-The files is easier to interpret in VS code and will provide you with more functionality - ie: viewing generated files.
 
-This Task Management system is a simple stand alone program that allows a user to read, update and delete entries in an sqlite database details about inventory items.
+**Key Functions**
 
-Key Components
-Functions
+add_book: 
+Add book allows the user to add new books to the database.
+  
+update_book:
+This allows the user to update any information on any of the books in the database.
+The appropriate field is then updated using the UPDATE sqlite3 function.
 
-add_book
-update_info
-delete_book
-search_book
-view_all
-Functions explained.
-The Program starts with a Login function that references users and passwords from a separate text file. The program can be accessed by default with username: admin password: adm1n
+delete_book:
+This will allow the user to delete a book from the database.
+Ask the user for the unique ID for the book they would like to delete, the deletion will be confirmed before it's deleted.
 
-add_book
-add_book allows the user to update the data base with a new entry. The user is asked to provide information about the object which wil then be updated to the relevent fields within the database.
+search_books:
+This will allow the user to search for books in the database. The user can choose what criteria they want to use to search for the books.
 
-update_info
-Update info allows the user to change the value in a certain feild for a particualar entry. The user is asked to input the code of the book they wish to update and is shown their selection for confirmation. A follow up question is asked as to which field they wish to update. New information is then gathered through the user interface and the appropriate field is then updated via the UPDATE sqlite3 function.
+view_all:
+This function will allow the user to display all the data that is currently stored in the database.
 
-delete_book
-Delete book allows the user to remove an entry from the database. The user is asked to enter the code of the book they wish to delete. The user is then shown the full entry for this book and asked to confirm if they wish to delete this item
+**Usage**
 
-search_book
-Search allows the user to search based on a chosen criteria. The search results will show all items that have associate feilds for example if the user chooses to search by author, all books written by the search author will be displayed, however if the user chooses to search by code then only the book with that code will be displayed.
+First the user is asked to log in, once logged in, they will be presented with the main menu. 
 
-view_all
-View all gathers all information form the database and displays it to the user in a readible manner.
+The user can then select the what they would like to do with the program, and further steps will be presented depending on the selection. 
 
-Basic Program flow.
-Once logged in the user is presented with a main menu.
+When the user is finished with the program, they can log out and close by typing exit. 
 
-By selecting one of the commands as instructed the user is then prompted with new instructions based on the selection.
 
-By continuing to follow the prompts on screen tasks can be taken care of and the database will be updated. Any functions that do not need user input will be displayed on screen and the menu will be re shown for any further requests.
-
-View all, for example, will display all information and then the function will end automatically.
-
-Once the user has finished the program can be closed from the main menu by typing exit.
+**Credits**
+This program was created by Essi Parker as part of the HyperionDev bootcamp tasks.
