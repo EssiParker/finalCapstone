@@ -6,6 +6,7 @@ This is a python based app used that demonstrate a online bookstore database. Th
 **How to use:**
 
 username: admin 
+
 password: adm1n
 
 You can run this code in Pycharm. Download/copy the files to your local, make sure all the database file is in the same directory as the python script. This is a simple Task Management system where the user can read, update and remove entires in the database. 
@@ -40,4 +41,5 @@ When the user is finished with the program, they can log out and close by typing
 
 
 **Credits**
+
 This program was created by Essi Parker as part of the HyperionDev bootcamp tasks.
